@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Logo from '../../images/logo';
+import LittleMessage from '../../little-message';
 
 const SIGN_IN_STRING = "Sign In"
 const EMAIL_STRING = "Email Adress"
@@ -89,6 +90,7 @@ export default function SignIn() {
             </Grid>
           </Box>
         </Box>
+        <LittleMessage sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
   );

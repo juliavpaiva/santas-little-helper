@@ -10,6 +10,7 @@ import InputLabel from '@mui/material/InputLabel';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl } from '@mui/material';
+import LittleMessage from '../../../little-message';
 
 const CHOOSE_USER = "Choose User"
 const CHOOSE_USER_TEXT = "Select bellow which user you want to sign in as."
@@ -81,6 +82,7 @@ export default function GuestChooseUser() {
           </FormControl>
           
         </Box>
+        <LittleMessage sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
   );

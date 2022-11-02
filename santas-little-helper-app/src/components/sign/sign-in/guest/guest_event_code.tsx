@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Logo from '../../../images/logo';
+import LittleMessage from '../../../little-message';
 
 const EMAIL_STRING = "Email Adress"
 const SIGN_IN_STRING = "Sign in as guest"
@@ -72,6 +73,7 @@ export default function GuestEventCode() {
             </Button>
           </Box>
         </Box>
+        <LittleMessage sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
   );
