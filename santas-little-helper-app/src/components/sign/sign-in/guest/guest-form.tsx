@@ -1,9 +1,3 @@
-// Cor preferida
-// Tamanho de roupa
-// Tamanho de sapato
-// Genero de livro
-// Caixa de texto para falar o que gosta e o que nao gosta
-
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -24,7 +18,7 @@ const HELLO_STRING = "Hello"
 const NAME_STRING = "Sonia"
 const GUST_FORM_TEXT_STRING = "Fill inforation for the secret santa bellow"
 const SECRET_SANTA_THEME_STRING = "The Secret Santa theme is:"
-    
+
 const FAVORITE_COLOR = "Favorite Color"
 const TSHIRT_SIZE_STRING = "T-shirt Size"
 const SHOE_SIZE_STRING = "Shoe Size"
