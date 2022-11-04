@@ -6,6 +6,8 @@ import SignUp from './components/sign/sign-up/sign_up';
 import Home from './components/home/home';
 import ListEvents from './components/events/list-events/list_events';
 import EventDetails from './components/events/event-details/event_details';
+import GuestEventCode from './components/sign/sign-in/guest/guest_event_code';
+import GuestForm from './components/sign/sign-in/guest/guest-form';
 
 function App() {
   return <EventDetails/>

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Avatar, Box, Button, Chip, Divider, Grid, Stack, Typography } from "@mui/material";
 import createTheme from "@mui/material/styles/createTheme";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import Logo from "../../images/logo";
@@ -11,36 +11,44 @@ const theme = createTheme();
 export default function EventDetails() {
     return (
         <ThemeProvider theme={theme}>
-            <Box sx={{
-                mt: 8,
-                mb: 2,
+            <Box
+            sx={{ 
+                marginTop: 8,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-              }}>
-                <Logo/>
-            </Box>
-            <Box
-            sx={{
-                marginRight: 20,
-                marginLeft: 20,
-                display: 'flex',
-                flexDirection: 'column',
-              }}>
-                                    
-                <Box>
-                <Typography variant="h4" gutterBottom>
-                    {EVENT_NAME}
+                mt: 3,
+                mb: 2 }}>
+            <Logo/>
+          </Box>
+            <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+          <Box sx={{ my: 3, mx: 2 }}>
+            <Grid container alignItems="center">
+              <Grid item xs>
+                <Typography gutterBottom variant="h4" component="div">
+                  {EVENT_NAME}
                 </Typography>
-                <Typography variant="h6" gutterBottom>
-                    {EVENT_DATE}
+              </Grid>
+              <Grid item>
+                <Typography gutterBottom variant="h6" component="div">
+                  {EVENT_DATE}
                 </Typography>
-                <Typography variant="h6" gutterBottom>
-                    {EVENT_PLACE}
-                </Typography>
-                </Box>
-            </Box>   
+              </Grid>
+            </Grid>
+            <Typography color="text.secondary" variant="body2">
+              {EVENT_PLACE}
+            </Typography>
+          </Box>
+          <Divider variant="middle" />
+          <Box sx={{ my: 3, mx: 2 }}>
+            <Stack direction="row" spacing={2}>
+                <Avatar>S</Avatar>
+                <Avatar>P</Avatar>
+                <Avatar>W</Avatar>
+                <Avatar>T</Avatar>
+            </Stack>
+          </Box>
+        </Box>
         </ThemeProvider>
-
-    )
+      );
 }

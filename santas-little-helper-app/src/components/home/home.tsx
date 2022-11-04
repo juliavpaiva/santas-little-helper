@@ -23,14 +23,6 @@ const EVENT_CODE_STRING = "Enter with event code"
 const theme = createTheme();
 
 export default function Home() {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
 
   return (
     <ThemeProvider theme={theme}>

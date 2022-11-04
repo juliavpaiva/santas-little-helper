@@ -1,3 +1,4 @@
+import Box from "@mui/material/Box";
 import Image from "mui-image";
 
 export default function Title() {
