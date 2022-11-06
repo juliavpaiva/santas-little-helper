@@ -5,16 +5,18 @@ export const SantasLittleHelperTheme = createTheme({
     background: {
       paper: "#f9f5f5"
     },
+    primary: {
+      main: "#7c011a",
+    }
   },
   typography: {
     fontFamily: [
       'Trispace',
       'sans-serif'
     ].join(','),
-  }
+  },
 });
 
 export const ButtonStyle = { 
   borderRadius: 50,
-  backgroundColor: "#7c011a"
  };

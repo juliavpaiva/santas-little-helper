@@ -4,10 +4,15 @@ export default {
       commons: {
         signUp: "Criar Conta",
         signIn: "Entrar",
-        signInEventCode: "Entrar com código"
+        signInEventCode: "Entrar com código",
+        email: "Email",
+        password: "Senha"
       },
       home: {
         littleSantasDefinition: "Uma ferramenta simples para organizar eventos de final de ano e amigos secretos."
+      },
+      signIn: {
+        forgotPassword: "Esqueci minha senha"
       }
     }
   }

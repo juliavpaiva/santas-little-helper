@@ -8,8 +8,7 @@ import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
 import { ButtonStyle, SantasLittleHelperTheme } from "../../theme";
-import I18n from "../i18n/i18n";
-import { LITTLE_SANTAS_DEFINITION_STRING, SIGN_IN_EVENT_CODE, SIGN_IN_STRING, SIGN_UP_STRING } from "../i18n/strings";
+import { LITTLE_SANTAS_DEFINITION_STRING, SIGN_IN_EVENT_CODE_STRING, SIGN_IN_STRING, SIGN_UP_STRING } from "../i18n/strings";
 import Logo from "../images/logo";
 import Title from "../images/title";
 import LittleMessage from "../little-message";
@@ -42,7 +41,7 @@ export default function Home() {
                         <Button variant="contained" style={ButtonStyle}>{t(SIGN_UP_STRING)}</Button>
                     </Stack>
                     <Stack spacing={2} direction="row" justifyContent="center">
-                        <Button variant="contained" style={ButtonStyle}>{t(SIGN_IN_EVENT_CODE)}</Button>
+                        <Button variant="contained" style={ButtonStyle}>{t(SIGN_IN_EVENT_CODE_STRING)}</Button>
                     </Stack>
                 </Box> 
                 
